@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="data-build" content="20190123.2">
+    <meta name="data-eleventy" content="v0.7.1">
+    <title>ハローワールド(Hello World)そして少し長めの日本語タイトルにしてみると</title>
+    <link rel="stylesheet" href="https://unpkg.com/chota">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>ハローワールド(Hello World)そして少し長めの日本語タイトルにしてみると</h1>
+        <p>Nodeはスケーラブルなネットワークアプリケーションを構築するために設計された非同期型のイベント駆動のJavaScript環境です。 以下の「Hello World」の例では、たくさんの接続を同時に処理することができます。</p>
+<pre><code>const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () =&gt; {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+</code></pre>
+<h2>セクションヘッダ</h2>
+<p>NodeはRubyのEvent MachineやPythonのTwistedのシステムに影響を受けていて、同様の設計です。</p>
+
+      </div>
+    </div>
+    <footer class="container">
+    </footer>
+  </body>
+</html>
